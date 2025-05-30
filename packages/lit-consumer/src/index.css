@@ -1,2 +1,4 @@
 @import "tailwindcss";
+
 @source "../../lit-base/";
+@source "../../../node_modules/@tailwind-lit-npm-monorepo/lit-base";

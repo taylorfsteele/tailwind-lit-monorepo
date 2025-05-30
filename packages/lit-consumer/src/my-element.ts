@@ -1,12 +1,15 @@
 import { LitElement, html, unsafeCSS } from 'lit';
 import { customElement } from 'lit/decorators.js';
 import '@tailwind-lit-npm-monorepo/lit-base';
+import { BaseElement } from '@tailwind-lit-npm-monorepo/lit-base';
 import style from './index.css?inline';
 
-@customElement('my-element')
-export class MyElement extends LitElement {
+export class AnotherBaseElement extends BaseElement {
   static styles = unsafeCSS(style);
+}
 
+@customElement('my-element')
+export class MyElement extends AnotherBaseElement {
   render() {
     return html`
       <div class="text-blue-500">
