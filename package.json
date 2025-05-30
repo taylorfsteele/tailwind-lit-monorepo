@@ -1,0 +1,10 @@
+{
+  "name": "@tailwind-lit-npm-monorepo/root",
+  "version": "1.0.0",
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "workspaces": [
+    "packages/*"
+  ]
+}
